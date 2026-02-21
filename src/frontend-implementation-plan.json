@@ -1,0 +1,109 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Marriage Video Viewer Frontend Implementation",
+  "requirements": [
+    {
+      "id": "REQ-2",
+      "summary": "Build a video gallery interface displaying all uploaded marriage videos with thumbnails and titles",
+      "acceptanceCriteria": [
+        "Videos are displayed in a grid or list layout",
+        "Each video shows a thumbnail and title",
+        "Users can see all uploaded videos at a glance"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/VideoGallery.tsx",
+          "operation": "create",
+          "description": "Create a video gallery component that fetches videos using backend.listVideos() and displays them in a responsive grid layout. Each video card shows a video thumbnail (using the video element's poster or first frame), title, and upload date. Use the blob-storage component's ExternalBlob.getDirectURL() method to generate video URLs for thumbnails. Verify the blob-storage component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the VideoGallery component in the main app layout, ensuring it is visible on the main page and properly integrated with the application routing structure."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Implement direct in-browser video playback with standard controls without requiring downloads",
+      "acceptanceCriteria": [
+        "Clicking a video opens it in a video player",
+        "Video plays directly in the browser",
+        "Standard playback controls are available",
+        "No download required to watch videos"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/VideoPlayer.tsx",
+          "operation": "create",
+          "description": "Create a video player component that accepts a VideoMetadata object and renders an HTML5 video element with controls (play, pause, volume, fullscreen). Use the blob-storage component's ExternalBlob.getDirectURL() method to get the video source URL for direct browser playback. Include a modal or dedicated player view with the video title and metadata display. Verify the blob-storage component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/VideoGallery.tsx",
+          "operation": "modify",
+          "description": "Add click handlers to video cards that open the VideoPlayer component with the selected video, passing the VideoMetadata to enable playback. Implement either a modal overlay or navigation to a player view."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create an upload interface where users can select and upload new marriage video files from their device",
+      "acceptanceCriteria": [
+        "Upload button or drag-and-drop area is available",
+        "Users can select video files from their device",
+        "Upload progress is shown during file transfer",
+        "Newly uploaded videos appear in the gallery"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/VideoUpload.tsx",
+          "operation": "create",
+          "description": "Create a video upload component with a file input or drag-and-drop zone for selecting video files. Convert the selected file to Uint8Array, create an ExternalBlob using ExternalBlob.fromBytes(), attach upload progress tracking using withUploadProgress(), and call backend.uploadVideo() with title, upload date (Date.now()), video blob, and file size. Display upload progress percentage during transfer and show success/error feedback. After successful upload, trigger a refresh of the video gallery. Verify the blob-storage component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the VideoUpload component in the main app layout, positioning it above or alongside the VideoGallery component to provide easy access to the upload functionality."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Apply a creative visual theme with elegant styling appropriate for a marriage/wedding context using warm and celebratory colors",
+      "acceptanceCriteria": [
+        "Color scheme reflects a wedding aesthetic",
+        "Typography is elegant and readable",
+        "Layout feels spacious and organized",
+        "Overall design is cohesive and celebratory"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update global styles with a wedding-themed color palette using warm tones (soft golds, blush pinks, ivory, champagne) for primary colors and elegant neutrals for backgrounds. Define CSS custom properties for theme colors and ensure consistent spacing throughout the application."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend the Tailwind configuration with a custom wedding-themed color palette (primary: warm gold/champagne, secondary: blush/rose, accent: soft ivory). Configure elegant font families (serif for headings, clean sans-serif for body) and generous spacing scale to create a refined and spacious layout."
+        },
+        {
+          "path": "frontend/src/components/VideoGallery.tsx",
+          "operation": "modify",
+          "description": "Apply wedding-themed styling using Tailwind classes with the custom color palette. Use elegant card designs with soft shadows, rounded corners, and generous padding. Ensure proper spacing between video cards for a refined gallery appearance."
+        },
+        {
+          "path": "frontend/src/components/VideoPlayer.tsx",
+          "operation": "modify",
+          "description": "Apply wedding-themed styling to the video player interface using the custom color palette. Style the modal or player container with elegant borders and backgrounds that complement the celebratory theme."
+        },
+        {
+          "path": "frontend/src/components/VideoUpload.tsx",
+          "operation": "modify",
+          "description": "Apply wedding-themed styling to the upload interface using elegant button designs, refined drag-and-drop zones, and cohesive color scheme. Ensure upload progress indicators match the celebratory aesthetic."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-build-a-video-gallery-interface-that-displays-all-uploaded-marriage-videos-as-a-browsable-collection-with-thumbnails-and-titles",
+      "featureTitle": "Build a video gallery interface that displays all uploaded marriage videos as a browsable collection with thumbnails and titles",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/VideoGallery.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-direct-in-browser-video-playback-with-standard-controls-play-pause-volume-fullscreen-without-requiring-downloads",
+      "featureTitle": "Implement direct in-browser video playback with standard controls (play, pause, volume, fullscreen) without requiring downloads",
+      "files": [
+        "frontend/src/components/VideoGallery.tsx",
+        "frontend/src/components/VideoPlayer.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-an-upload-interface-where-users-can-select-and-upload-new-marriage-video-files-from-their-device",
+      "featureTitle": "Create an upload interface where users can select and upload new marriage video files from their device",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/VideoUpload.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-creative-visual-theme-with-elegant-styling-appropriate-for-a-marriage-wedding-context-using-warm-and-celebratory-colors-with-refined-typography-and-spacious-layouts",
+      "featureTitle": "Apply a creative visual theme with elegant styling appropriate for a marriage/wedding context, using warm and celebratory colors with refined typography and spacious layouts",
+      "files": [
+        "frontend/src/components/VideoGallery.tsx",
+        "frontend/src/components/VideoPlayer.tsx",
+        "frontend/src/components/VideoUpload.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

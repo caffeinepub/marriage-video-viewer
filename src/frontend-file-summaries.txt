@@ -1,0 +1,10 @@
+{
+  "frontend/src/App.tsx": "Main application component with header, footer, and layout structure that renders the video upload and gallery components with wedding-themed branding.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching video list and uploading videos with proper state management and cache invalidation.",
+  "frontend/src/components/VideoGallery.tsx": "Video gallery component displaying all uploaded videos in a responsive grid with thumbnails, metadata, and click-to-play functionality.",
+  "frontend/src/components/VideoPlayer.tsx": "Modal video player component with HTML5 video controls for direct in-browser playback of selected videos.",
+  "frontend/src/components/VideoUpload.tsx": "Video upload interface with drag-and-drop support, file selection, title input, and real-time upload progress tracking.",
+  "frontend/src/index.css": "Global styles with wedding-themed OKLCH color system featuring warm champagne, blush, and ivory tones for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with wedding theme colors, elegant serif fonts (Playfair Display), custom shadows, and refined spacing.",
+  "frontend/src/main.tsx": "Application entry point with React Query, Internet Identity, theme provider, and toast notifications configured."
+}

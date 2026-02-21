@@ -1,0 +1,18 @@
+{
+  "backend/main.mo": "Main backend actor that manages video metadata storage with upload and list functionality, using blob storage for video files and sorting videos by upload date.",
+  "feature_evidence.json": "Feature evidence report documenting four implemented features: video gallery interface, in-browser playback, upload interface, and wedding-themed styling with high confidence test coverage.",
+  "frontend-file-summaries.txt": "JSON summary of frontend files describing the React components, hooks, and styling for the wedding video viewer application.",
+  "frontend/index.css": "Tailwind CSS base styles defining OKLCH color system variables for light and dark themes with wedding-appropriate neutral tones.",
+  "frontend/index.html": "HTML entry point for the Marriage Video Viewer application with root div and module script reference.",
+  "frontend/src/App.tsx": "Main React app component providing layout structure with header, footer, and sections for video upload and gallery with wedding-themed branding.",
+  "frontend/src/components/VideoGallery.tsx": "Video gallery component displaying uploaded videos in a responsive grid with thumbnails, metadata (date, file size), and click-to-play functionality.",
+  "frontend/src/components/VideoPlayer.tsx": "Modal dialog component for playing selected videos with HTML5 controls, displaying video metadata and preventing downloads.",
+  "frontend/src/components/VideoUpload.tsx": "Video upload interface with drag-and-drop support, file selection, title input, progress tracking, and toast notifications for upload status.",
+  "frontend/src/hooks/useActor.ts": "React hook managing backend actor creation with Internet Identity authentication, query caching, and automatic invalidation on identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React hook and context provider for Internet Identity authentication on ICP, managing login state, identity persistence, and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for video operations: useListVideos fetches all videos from the backend actor, and useUploadVideo handles video upload mutations with automatic cache invalidation.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom wedding-themed color palettes for light and dark modes using OKLCH color space, featuring warm champagne, blush, and gold tones.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClient and InternetIdentityProvider wrappers around the main App component.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the default theme with wedding-themed colors using OKLCH variables, custom fonts (Playfair Display, Inter), elegant shadows, and accordion animations.",
+  "project_state.json": "Project metadata tracking implemented features (video gallery, playback, upload, wedding theme) and pending backend storage requirements for the Marriage Video Viewer application."
+}

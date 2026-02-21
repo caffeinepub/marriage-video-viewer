@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "A marriage video file app for direct viewing",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-video-gallery-interface-that-displays-all-uploaded-marriage-videos-as-a-browsable-collection-with-thumbnails-and-titles",
+      "title": "Build a video gallery interface that displays all uploaded marriage videos as a browsable collection with thumbnails and titles",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-direct-in-browser-video-playback-with-standard-controls-play-pause-volume-fullscreen-without-requiring-downloads",
+      "title": "Implement direct in-browser video playback with standard controls (play, pause, volume, fullscreen) without requiring downloads",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-upload-interface-where-users-can-select-and-upload-new-marriage-video-files-from-their-device",
+      "title": "Create an upload interface where users can select and upload new marriage video files from their device",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-creative-visual-theme-with-elegant-styling-appropriate-for-a-marriage-wedding-context-using-warm-and-celebratory-colors-with-refined-typography-and-spacious-layouts",
+      "title": "Apply a creative visual theme with elegant styling appropriate for a marriage/wedding context, using warm and celebratory colors with refined typography and spacious layouts",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create marriage video file app with direct viewing capability",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create a backend storage system to upload and store marriage video files with metadata including title, upload date, and file size",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Marriage Video Viewer",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

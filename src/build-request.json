@@ -1,0 +1,103 @@
+{
+  "kind": "build_request",
+  "title": "Create marriage video file app with direct viewing",
+  "projectName": "Marriage Video Viewer",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a backend storage system to upload and store marriage video files with metadata including title, upload date, and file size",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can upload video files to the backend",
+        "Video metadata is stored and retrievable",
+        "Backend returns video file URLs for playback"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Build a video gallery interface that displays all uploaded marriage videos as a browsable collection with thumbnails and titles",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Videos are displayed in a grid or list layout",
+        "Each video shows a thumbnail and title",
+        "Users can see all uploaded videos at a glance"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement direct in-browser video playback with standard controls (play, pause, volume, fullscreen) without requiring downloads",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Direct seeing"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking a video opens it in a video player",
+        "Video plays directly in the browser",
+        "Standard playback controls are available",
+        "No download required to watch videos"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create an upload interface where users can select and upload new marriage video files from their device",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Upload button or drag-and-drop area is available",
+        "Users can select video files from their device",
+        "Upload progress is shown during file transfer",
+        "Newly uploaded videos appear in the gallery"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Apply a creative visual theme with elegant styling appropriate for a marriage/wedding context, using warm and celebratory colors with refined typography and spacious layouts",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color scheme reflects a wedding aesthetic",
+        "Typography is elegant and readable",
+        "Layout feels spacious and organized",
+        "Overall design is cohesive and celebratory"
+      ]
+    }
+  ],
+  "constraints": [
+    "Video files must be stored in the backend canister",
+    "Video playback must work directly in the browser without external dependencies"
+  ],
+  "nonGoals": [
+    "Video editing or trimming features",
+    "Social sharing to external platforms",
+    "Live streaming capabilities",
+    "Video format conversion"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
